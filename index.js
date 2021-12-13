@@ -16,6 +16,9 @@ app.use("/guitars", require("./routes/guitars"));
 //stores
 app.use("/stores", require("./routes/stores"));
 
+//users
+app.use("/users", require("./routes/users"));
+
 //4.SERVER
 app.listen(process.env.PORT, () => {
   console.log(`Servidor trabajando en http://localhost:${process.env.PORT}`);
