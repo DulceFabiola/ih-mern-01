@@ -13,5 +13,8 @@ router.get("/readall", storeController.getReadAll);
 //LEER UNA STORE
 router.get("/readone/:id", storeController.getOneStore);
 
+//EDITAR UNA STORE
+router.put("/edit/:id", storeController.edit);
+
 //3.EXPORTACION
 module.exports = router;
